@@ -8,6 +8,10 @@ Aplikasi desktop buat **deploy project dari PC ke berbagai platform** — semua 
 ![React](https://img.shields.io/badge/React-19-61DAFB)
 ![Wails](https://img.shields.io/badge/Wails-v3-red)
 ![License](https://img.shields.io/badge/license-MIT-green)
+![GitHub stars](https://img.shields.io/github/stars/yedincoder/ngappiddeploy?style=social)
+![GitHub forks](https://img.shields.io/github/forks/yedincoder/ngappiddeploy?style=social)
+![GitHub issues](https://img.shields.io/github/issues/yedincoder/ngappiddeploy)
+![GitHub last commit](https://img.shields.io/github/last-commit/yedincoder/ngappiddeploy)
 
 ---
 
@@ -298,6 +302,28 @@ Deploy sukses
 - **📋 Copy** → copy ke clipboard
 - **💾 Save** → download `.txt`
 - **🗑️ Clear** → hapus tampilan
+
+---
+
+## 📸 Screenshot
+
+### Dashboard
+
+![Dashboard](docs/screenshot-dashboard.png)
+
+### Servers
+
+![Servers](docs/screenshot-servers.png)
+
+### Projects & Deploy
+
+![Projects](docs/screenshot-projects.png)
+
+### About
+
+![About](docs/screenshot-about.png)
+
+> **Catatan:** Taruh screenshot di folder `docs/` — dengan nama sesuai di atas.
 
 ---
 
@@ -606,6 +632,33 @@ Aplikasi ini **gratis** dan **selamanya gratis**. Kalau berguna:
 
 ---
 
+## 🙏 Credit
+
+Terima kasih ke:
+
+**Framework & Library:**
+- [Wails](https://wails.io) — Framework desktop Go + React
+- [React](https://react.dev) — UI library
+- [Vite](https://vitejs.dev) — Build tool
+- [TypeScript](https://typescriptlang.org) — Type safety
+
+**Network:**
+- [pkg/sftp](https://github.com/pkg/sftp) — SFTP client
+- [golang.org/x/crypto/ssh](https://pkg.go.dev/golang.org/x/crypto/ssh) — SSH client
+- [jlaffaye/ftp](https://github.com/jlaffaye/ftp) — FTP client
+- [AWS SDK Go v2](https://github.com/aws/aws-sdk-go-v2) — S3 client
+
+**Icons & Tools:**
+- [Shields.io](https://shields.io) — Badge
+- [Simple Icons](https://simpleicons.org) — Icon reference
+
+**Inspirasi:**
+- [Vercel](https://vercel.com), [Netlify](https://netlify.com) — Pengalaman deploy
+
+**Dan kamu** — yang udah pakai aplikasi ini 🙏
+
+---
+
 ## 📞 Kontak
 
 **YedinCoder** — Full-stack Developer
@@ -616,6 +669,36 @@ Aplikasi ini **gratis** dan **selamanya gratis**. Kalau berguna:
 - 🔗 GitHub: [@yedincoder](https://github.com/yedincoder)
 - 📦 Repo: [ngappiddeploy](https://github.com/yedincoder/ngappiddeploy)
 - 🚀 Ecosystem: [dev.ngappid.com](https://dev.ngappid.com)
+
+---
+
+## 📋 Changelog
+
+### v0.1.0 — 4 Oktober 2026
+
+**Rilis pertama** 🎉
+
+**Fitur:**
+- ✅ Login lokal (setup + login)
+- ✅ Dashboard (stats + history + info)
+- ✅ 9 tipe server: Vercel, Netlify, Cloudflare Pages, Railway, SSH, SFTP, FTP, AWS EC2
+- ✅ Deploy ke semua platform
+- ✅ Auto-install CLI
+- ✅ Auto-login dengan token
+- ✅ Build pipeline otomatis
+- ✅ Browse folder server
+- ✅ Log realtime
+- ✅ History deploy (max 100)
+- ✅ Theme Dark/Light
+- ✅ About page
+- ✅ Toast notifikasi
+- ✅ Enkripsi credential (AES-GCM)
+
+**Perbaikan:**
+- Fix Cloudflare auth (skip whoami)
+- Fix Railway token (pakai `RAILWAY_API_TOKEN`)
+- Fix FTP upload folder
+- Fix AWS `.pem` loader
 
 ---
 
